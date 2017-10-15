@@ -224,18 +224,6 @@ CREATE TABLE `image_review_stats` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Table structure for table `image_review_wikis`
---
-
-DROP TABLE IF EXISTS `image_review_wikis`;
-CREATE TABLE `image_review_wikis` (
-  `wiki_id` int(11) NOT NULL,
-  `top200` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`wiki_id`),
-  KEY `top200` (`top200`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
 -- Table structure for table `pages`
 --
 
