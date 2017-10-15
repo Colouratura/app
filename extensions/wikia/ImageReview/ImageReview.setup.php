@@ -31,13 +31,9 @@ $wgAutoloadClasses['ImageReviewSpecialController'] =  $dir . 'ImageReviewSpecial
 $wgAutoloadClasses['ImageReviewHelperBase'] =  $dir . 'ImageReviewHelperBase.class.php';
 $wgAutoloadClasses['ImageReviewHelper'] =  $dir . 'ImageReviewHelper.class.php';
 $wgAutoloadClasses['ImageReviewDatabaseHelper'] =  $dir . 'ImageReviewDatabaseHelper.class.php';
-$wgAutoloadClasses['ImageReviewHooks'] =  $dir . 'ImageReview.hooks.php';
 $wgAutoloadClasses['ImageReviewStatsCache'] =  $dir . 'ImageReviewStatsCache.class.php';
 
 $wgSpecialPages['ImageReview'] = 'ImageReviewSpecialController';
-
-// hooks setup
-$wgExtensionFunctions[] = 'ImageReviewHooks::setupHooks';
 
 // i18n
 $wgExtensionMessagesFiles['ImageReview'] = $dir . 'ImageReview.i18n.php';
